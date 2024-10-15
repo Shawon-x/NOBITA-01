@@ -28,7 +28,7 @@ module.exports.handleReply = async function({ api, event, args, Threads, handleR
           data.banned = 1;
           await Threads.setData(idgr, { data });
           global.data.threadBanned.set(parseInt(idgr), 1);
-          api.sendMessage(`successfully banned group id : ${idgr}`, event.threadID, event.messageID);
+          api.sendMessage(`🅂🅄🄲🄲🄴🅂🅂🄵🅄🄻🄻🅈 🄱🄰🄽🄽🄴🄳 🄶🅁🄾🅄🄿 🄸🄳 : ${idgr}`, event.threadID, event.messageID);
           break;
         }
 
