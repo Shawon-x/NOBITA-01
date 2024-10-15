@@ -20,18 +20,20 @@ if(link.indexOf(".com/")!==-1) {
     var uidUser = res.data.data.uid
     api.addUserToGroup(uidUser, threadID, (err) => {
     if (participantIDs.includes(uidUser)) return api.sendMessage(`ᴛʜᴇ ᴍᴇᴍʙᴇʀ ʜᴀꜱ ᴛᴏ ʙᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ ✅`, threadID, messageID);
-    if (err) return api.sendMessage(` Cannot add members to the group`, threadID, messageID);
+    if (err) return api.sendMessage(`ᴄᴀɴɴᴏᴛ ᴀᴅᴅ ᴍᴇᴍʙᴇʀꜱ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ
+`, threadID, messageID);
     else if (approvalMode && !adminIDs.some(item => item.id == api.getCurrentUserID())) return api.sendMessage(`ᴀᴅᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟ ᴜꜱᴇʀꜱ ᴛᴏ ᴛʜᴇ ʙʀᴏᴡꜱᴇʀ ʟɪꜱᴛ`, threadID, messageID);
-    else return api.sendMessage(`Add members to the bar group`, threadID, messageID);
+    else return api.sendMessage(`🄰🄳🄳 🄼🄴🄼🄱🄴🅁🅂 🅃🄾 🅃🄷🄴 🄱🄰🅁 🄶🅁🄾🅄🄿 😒`, threadID, messageID);
     });
     }
   else { 
     var uidUser = args[0] 
     api.addUserToGroup(uidUser, threadID, (err) => {
     if (participantIDs.includes(uidUser)) return api.sendMessage(`🌸 ᴛʜᴇ ᴍᴇᴍʙᴇʀ ʜᴀꜱ ᴛᴏ ʙᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ 🌸`, threadID, messageID);
-    if (err) return api.sendMessage(`Cannot add members to the group`, threadID, messageID);
+    if (err) return api.sendMessage(`ᴄᴀɴɴᴏᴛ ᴀᴅᴅ ᴍᴇᴍʙᴇʀꜱ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ
+`, threadID, messageID);
     else if (approvalMode && !adminIDs.some(item => item.id == api.getCurrentUserID())) return api.sendMessage(`ᴀᴅᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟ ᴜꜱᴇʀꜱ ᴛᴏ ᴛʜᴇ ʙʀᴏᴡꜱᴇʀ ʟɪꜱᴛ`, threadID, messageID);
-    else return api.sendMessage(`Add members to the bar group`, threadID, messageID);
+    else return api.sendMessage(`🄰🄳🄳 🄼🄴🄼🄱🄴🅁🅂 🅃🄾 🅃🄷🄴 🄱🄰🅁 🄶🅁🄾🅄🄿 😒`, threadID, messageID);
     });
   }
 }
