@@ -22,6 +22,6 @@ module.exports.run = async function ({ api, event, args, Users }) {
     const name = await Users.getNameUser(i);
     msg += m+". "+name+"\nuser id : "+i+"\nfacebook link: https://facebook.com/"+i+"\n\n";
   }
-  msgs += "all users in this group\n\n"+msg;
+  msgs += "🄰🄻🄻 🅄🅂🄴🅁🅂 🄸🄽 🅃🄷🄸🅂 🄶🅁🄾🅄🄿\n\n"+msg;
   reply(msgs)
 }
